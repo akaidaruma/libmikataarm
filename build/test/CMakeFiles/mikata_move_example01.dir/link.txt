@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/mikata_move_example01.dir/mikata_move_example01.cpp.o  -o mikata_move_example01 -Wl,-rpath,/home/fujii/libmikataarm/build/src:/home/fujii/libmikataarm/build/libdynamixel/src -lpthread ../src/libmikata.so ../libdynamixel/src/libdynamixel.so -lpthread 
