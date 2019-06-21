@@ -33,8 +33,10 @@ int main(const int argc, const char* argv[]) {
 	}
 	std::cout << "gripper:" << g.angle << std::endl;
 	Matrix44 m = forward_kinematics(joints);
+
 	std::cout << "P" << std::endl << str(m) << std::endl;
 
+	/**
 	std::vector<double> solved = inverse_kinematics(m);
 	for(int i = 0;i < numJoints;i++) {
 	  std::cout << "j[" << i << "]" << solved[i] << std::endl;
@@ -45,7 +47,7 @@ int main(const int argc, const char* argv[]) {
 	for(int i = 0;i < numJoints;i++) {
 	  std::cout << "d[" << i << "]" << fabs((js[i].angle - joint_offset[i]) - solved[i]) << std::endl;
 	}
-
+	*/
 
 	ssr::Thread::Sleep(100);
       }
